@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #f2fdfe;
+    
+    height: 100vh;
+    background-image: url(../img/grocery-store.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bodyGlass{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.611);
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(6px);
+}
+
+.wrapper{
+    width: 400px;
+    min-height: 700px;
+    background-color: rgba(208, 208, 208, 0.664);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-radius: 30px;
+
+    .shelf{
+        width: 300px;
+        height: 500px;
+        background-color: dodgerblue;
+        margin-top: 40px;
+        background: url(../img/shelf.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+
+
+        .upper-row{
+            position: absolute;
+            display: flex;
+            align-items: end;
+            gap: 10px;
+            left: 60px;
+            top: 20px;
+        }
+        .middle-row{
+            position: absolute;
+            display: flex;
+            align-items: end;
+            left: 60px;
+            top: 200px;
+        }
+        .last-row{
+            position: absolute;
+            display: flex;
+            align-items: end;
+            gap: 10px;
+            left: 60px;
+            top: 300px;
+        }
+    }
+    .cart {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        bottom: 30px;
+        z-index: 100;
+        padding: 80px;
+        transition: background-color 0.3s ease;
+        background: url(../img/cart.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+
+        
+        
+    }
+    #cart-items{
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        position: absolute;
+        z-index: -1;
+    }
+    
+    .cart.hovered {
+        background-color: rgba(0, 255, 0, 0.3); 
+    }
+
+    button{
+        border: none;
+        padding: 15px 30px;
+        background-color: gold;
+        color: black;
+        border-radius: 20px;
+        font-size: 20px;
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.309);
+        position: absolute;
+        translate: 36%;
+        bottom: 10%;
+        z-index: 200;
+        opacity: 0;
+
+        transition: .2s ease;
+
+    }
+}
+
