@@ -48,11 +48,30 @@ body{
 
         .upper-row{
             position: absolute;
-            display: flex;
-            align-items: end;
-            gap: 10px;
             left: 60px;
             top: 20px;
+
+            #product1{
+                position: absolute;
+            }
+            #product2{
+                position: absolute;
+                top: 30px;
+                left: 50px;
+                
+            }
+            #product3{
+                position: absolute;
+                top: 80px;
+                left: 100px;
+                
+            }
+            #product4{
+                position: absolute;
+                top: 85px;
+                left: 160px;
+                
+            }
         }
         .middle-row{
             position: absolute;
@@ -60,6 +79,25 @@ body{
             align-items: end;
             left: 60px;
             top: 200px;
+
+
+            #product5{
+                position: absolute;
+                top: 7px;
+            }
+            #product6{
+                position: absolute;
+                top: 7px;
+                left: 50px;
+                
+            }
+            #product7{
+                position: absolute;
+                top: 10px;
+                left: 130px;
+                
+            }
+            
         }
         .last-row{
             position: absolute;
@@ -68,15 +106,39 @@ body{
             gap: 10px;
             left: 60px;
             top: 300px;
+
+
+            #product8{
+                position: absolute;
+                top: -10px;
+            }
+            #product9{
+                position: absolute;
+                top: 15px;
+                left: 50px;
+                
+            }
+            #product10{
+                position: absolute;
+                top:20px;
+                left: 110px;
+                
+            }
+            #product11{
+                position: absolute;
+                top: 10px;
+                left: 150px;
+                
+            }
         }
     }
     .cart {
         position: absolute;
         width: 300px;
-        height: 300px;
+        height: 250px;
         bottom: 30px;
         z-index: 100;
-        padding: 80px;
+        padding: 60px;
         transition: background-color 0.3s ease;
         background: url(../img/cart.svg);
         background-position: center;
